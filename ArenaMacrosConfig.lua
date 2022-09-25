@@ -51,7 +51,7 @@ local function ShowOptionsFrame ()
     local frameTarget3 = CreateOptionFrame("Press modifier for target 3\n esc keeps old value")
 
 
-    -- I should refactor the next session but the problem is I'm using global variables :(
+    -- I should refactor the next part, but the problem is I'm using global variables :(
     frameTarget1:SetScript("OnKeyDown", function (self, button)
         local input = SanitizeInput(button)
 
