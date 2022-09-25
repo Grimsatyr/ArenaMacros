@@ -1,5 +1,8 @@
 ## Interface: 90207
 ## Title: ArenaMacros
 ## Version: 0.0.1
+## Notes: Arena Macros for healers and dps
+## SavedVariables:arenaMacrosVariables
 
 ArenaMacros.lua
+ArenaMacrosConfig.lua

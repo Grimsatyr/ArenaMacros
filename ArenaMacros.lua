@@ -15,9 +15,9 @@
 SLASH_MACROPARTY1 = "/macroparty"
 SLASH_MACROARENA1 = "/macroarena"
 
-local modTarget1 = "nomod"
-local modTarget2 = "ctrl"
-local modTarget3 = "alt"
+modTarget1 = "nomod"
+modTarget2 = "ctrl"
+modTarget3 = "alt"
 
 local function errorMessage(text)
     local greeting = "An error occured: " .. text .. "!"
@@ -33,6 +33,12 @@ local function ApplyTemplate(spellName, taget1, target2, target3)
                 "/cast [mod:" .. modTarget3 .. ", @" .. target3 .. "] " .. spellName
 
         CreateMacro(spellName, "INV_Misc_QuestionMark", macroTemplate, true)
+
+        print("--------------------------")
+        print("macro created!")
+        print(macroTemplate)
+        print("--------------------------")
+
     else
         errorMessage("Spell name length cannot be 0")
     end
